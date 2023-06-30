@@ -1,0 +1,81 @@
+.formContainerSearch {
+    position: relative;
+    /* background-color: aqua; */
+    width: 100%;
+}
+.form-search {
+    display: grid;
+    
+    grid-template-columns: 3fr 3fr 3fr 1fr;
+    grid-template-areas: "inputgroupsearch-name inputgroupsearch-phone inputgroupsearch-email btn";
+    column-gap: 2px;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.inputgroupsearch-name {
+    grid-area: inputgroupsearch-name;
+}
+.inputgroupsearch-phone {
+    grid-area: inputgroupsearch-phone;
+}
+.inputgroupsearch-email {
+    grid-area: inputgroupsearch-email;
+}
+.btn{
+    grid-area: btn;
+}
+
+
+.search-label {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -9px;
+    left: 25px;
+    background-color: white;
+    color: gray;
+    padding: 0 3px;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+.formContainerSearch img {
+    width: 16px;
+    margin-right: 3px;
+} 
+
+.input-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    border: 1px solid gray;
+    /* padding: 0 30px; */
+    color: gray;
+    text-indent: 10px;
+    /* margin: 0 2px; */
+
+}
+.inputgroupsearch-name,
+.inputgroupsearch-phone,
+.inputgroupsearch-email
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.input-icon {
+    position: absolute;
+    left: 9px;
+    top: 10px;
+    opacity: .8;
+}
+
